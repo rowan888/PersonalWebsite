@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rowan Jarvis</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Add custom styles for this page only */
+        #projects {
+            background-color: #f5f5f5;
+        }
+
+        .project-gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Adjust the minimum width as needed */
+            gap: 20px;
+            justify-items: center;
+        }
+
+        .project {
+            width: 100%;
+            max-width: 600px;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            text-align: center;
+        }
+
+        .project img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Rowan Jarvis</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="projects.html">Projects</a>
+            <a href="blog.html">Blog</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <section id="projects">
+        <div class="container">
+            <h2>My Projects</h2>
+            <div class="project-gallery">
+                <!-- Project 1 -->
+                <div class="project">
+                    <img src="project1.jpg" alt="Project 1">
+                    <p>Description of Project 1.</p>
+                    <a href="#" class="btn btn-primary">Learn More</a>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project">
+                    <img src="project2.jpg" alt="Project 2">
+                    <p>Description of Project 2.</p>
+                    <a href="#" class="btn btn-primary">Learn More</a>
+                </div>
+
+                <!-- Add more projects as needed -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal for project details -->
+    <div id="project-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <img src="project-image.jpg" alt="Project Image">
+            <p>Project details and additional information...</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 Rowan Jarvis</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
