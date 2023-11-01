@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,7 +14,8 @@
 
         .project-gallery {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Adjust the minimum width as needed */
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            /* Adjust the minimum width as needed */
             gap: 20px;
             justify-items: center;
         }
@@ -35,6 +37,7 @@
         }
     </style>
 </head>
+
 <body>
     <header>
         <h1>Rowan Jarvis</h1>
@@ -46,30 +49,30 @@
             <a href="contact.html">Contact</a>
         </nav>
     </header>
+    <main>
+        <section id="projects">
+            <div class="container">
+                <h2>My Projects</h2>
+                <div class="project-gallery">
+                    <!-- Project 1 -->
+                    <div class="project">
+                        <img src="project1.jpg" alt="Project 1">
+                        <p>Description of Project 1.</p>
+                        <a href="#" class="btn btn-primary">Learn More</a>
+                    </div>
 
-    <section id="projects">
-        <div class="container">
-            <h2>My Projects</h2>
-            <div class="project-gallery">
-                <!-- Project 1 -->
-                <div class="project">
-                    <img src="project1.jpg" alt="Project 1">
-                    <p>Description of Project 1.</p>
-                    <a href="#" class="btn btn-primary">Learn More</a>
+                    <!-- Project 2 -->
+                    <div class="project">
+                        <img src="project2.jpg" alt="Project 2">
+                        <p>Description of Project 2.</p>
+                        <a href="#" class="btn btn-primary">Learn More</a>
+                    </div>
+
+                    <!-- Add more projects as needed -->
                 </div>
-
-                <!-- Project 2 -->
-                <div class="project">
-                    <img src="project2.jpg" alt="Project 2">
-                    <p>Description of Project 2.</p>
-                    <a href="#" class="btn btn-primary">Learn More</a>
-                </div>
-
-                <!-- Add more projects as needed -->
             </div>
-        </div>
-    </section>
-
+        </section>
+    </main>
     <!-- Modal for project details -->
     <div id="project-modal" class="modal">
         <div class="modal-content">
@@ -85,4 +88,5 @@
 
     <script src="script.js"></script>
 </body>
+
 </html>
